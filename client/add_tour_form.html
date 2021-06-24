@@ -1,79 +1,63 @@
-<!-- index.html -->
-<!doctype html>
-<html>
-<head>
-    <title>Add Tour</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <!-- load bootstrap via CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
-    "></script> <!-- load jquery via CDN -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-    <script src= "/public/script2.js"></script>
-</head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Shuru turu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src= "/scripts/addTour.js"></script>
+        <link rel="stylesheet" href="/styles/form_style.css">
+    </head>
 
-<body>
-    <div class="col-sm-6 col-sm-offset-3">
-
-        <h1>Add new tour</h1>
+    <body>
+        <h1 class = "prompt">
+            Add tour details:
+        </h1>
 
         <!-- OUR FORM -->
         <form id="tour_form" name="tour_form" method="POST">
 
-             <!-- ID -->
-             <div id="tour-group" class="form-group">
-                <label for="tour_id">Tour ID</label>
-                <input type="text" class="form-control" name="tour_id" id="tour_id" placeholder="write tour id here"
+             <!-- Tour Name -->
+             <div class="form-group">
+                <label for="tour_name">Tour Name</label>
+                <input type="text" class="form-control" name="tour_name" id="tour_name" placeholder="Tour name"
                     required>
-                <!-- errors will go here -->
             </div>
-            <div id="tour-group" class="form-group">
+
+             <!-- Start Date-->
+            <div class="form-group">
                 <label for="start_date">Start Date</label>
-                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="write date here"
+                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="Start date"
                     required>
             </div>
-            <div id="tour-group" class="form-group">
+
+             <!-- Duration-->
+            <div class="form-group">
                 <label for="duration">Duration</label>
-                <input type="number" min ="0" class="form-control" name="duration" id="duration" placeholder="write duration here"
+                <input type="number" min ="0" class="form-control" name="duration" id="duration" placeholder="Duration"
                     required>
             </div>
-            <div id="tour-group" class="form-group">
+
+             <!-- Price-->
+            <div class="form-group">
                 <label for="price">Price</label>
-                <input type="number" min ="0" class="form-control" name="price" id="price" placeholder="write price here"
+                <input type="number" min ="0" class="form-control" name="price" id="price" placeholder="Price"
                     required>
             </div>
 
-            <h3>guide details:</h3>
-            <!-- NAME -->
-            <div id="name-guide" class="form-group">
-                <label for="name">Guide's Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="write name here"
-                    required>
+            <!-- Guide Name-->
+            <div class="form-group">
+                <label for="guide_name">Guide's Name</label>
+                <select id="guide_name" name="guide_name"  required>
+                
+                </select>
             </div>
 
-
-
-            <!-- EMAIL -->
-            <div id="email-guide" class="form-group">
-                <label for="email">Guide's Email</label>
-                <input type="text" class="form-control" name="email" id ="email" placeholder="rudd@avengers.com">
-                <!-- errors will go here -->
-            </div>
-
-
-            <!-- PHONE -->
-            <div id="phone-guide" class="form-group">
-                <label for="phone">Guide's Phone</label>
-                <input type="number" class="form-control" name="phone" id="phone" placeholder="write your number phone here"
-                    required>
-                <!-- errors will go here -->
-            </div>
-
-
-            <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+            <button type="submit" class="button btn btn-primary btn-lg btn-success">Submit</button>
 
         </form>
 
-    </div>
-</body>
+    </body>
 
 </html>
