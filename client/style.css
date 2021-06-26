@@ -26,6 +26,20 @@ body {
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+#addGuide {
+    background-color: #d6ece4; 
+    /* border: none; */
+    color:black;
+    padding: 15px 32px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 
 
 #sort {

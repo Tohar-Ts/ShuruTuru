@@ -1,6 +1,5 @@
-function valdiateForm(){
+$(document).ready(function () {
     $("form[name='guide_form']").validate({
-      // Specify validation rules
       rules: {
         "guide_name":{
           required: true,
@@ -15,29 +14,26 @@ function valdiateForm(){
           minlength: 9
         },
       },
-  
-      // Specify validation error messages
+
+      //validation error messages
       messages: {
+        email: "insert correct email",
         guide_name:{
-          minlength: "Guide name must be at least 2 characters long"
+          minlength: "name must be at least 2 characters long"
         },
         phone:{
-          minlength: "Phone must be at least 9 characters long"
-        },
-        email: "email structure is some@domain "
+          minlength: "phone must be 9 digits and up"
+        }
       },
     });
-  }
-  
-  function submitForm(){
     $('#guide_form').submit(function (event) {
       if(!$("#guide_form").valid()) return;
       $.ajax({
-          type: 'POST', 
-          url: '/guide', 
+          type: 'POST',
+          url: '/guide',
           contentType: 'application/json',
           data: JSON.stringify({
-                "name" : $("#guide_name").val(),
+                "name" : $("#guideName").val(),
                 "email" : $("#email").val(),
                 "cellular" : $("#phone").val(),
             },
@@ -45,26 +41,19 @@ function valdiateForm(){
           processData: false,
           encode: true,
           success: function( data){
-            alert("Guide was added successfully.");
+            alert("New Guide was added");
             location.href = "/main";
           },
           error: function(request, status, error){
               if(error == "Bad Request"){
-                  alert("Guide with this name exist.");
-                  console.log( "Error: Guide with this name already exists! " + error);
+                  alert("There was a problem, Note- you can't create guide with name that already exist");
               }
               else{
-                alert("Error in  the server, maybe validation error. Check the fields and try again.");
-                console.log( "Error in the server. " + error);
+                alert("Error! check fields");
               }
           }
       })
       event.preventDefault();
   });
-  }
-  
-  $(document).ready(function () {
-    valdiateForm();
-    submitForm();
-  });
-  
+
+});
