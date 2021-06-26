@@ -1,7 +1,7 @@
-const Tours = require('../models/tours'),
+const Tours = require('../mongoModels/tours'),
 Tour = Tours.Tour,
 Site = Tours.Site,
-Guide = require('../models/guides');
+Guide = require('../mongoModels/guides');
 
 /* ***************CRUD METHODS*************** */
 

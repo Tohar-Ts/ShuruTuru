@@ -1,4 +1,4 @@
-const Guide = require('../models/guides')
+const Guide = require('../mongoModels/guides')
 module.exports = {
 
     //READ a spesific guide

@@ -18,7 +18,6 @@ $(document).ready(function () {
             minlength: "Id must be at least 2 characters long"
           },
         },
-        // price: "insert positive number"
       });
 
     // process the form
