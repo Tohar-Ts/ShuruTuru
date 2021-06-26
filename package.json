@@ -2,10 +2,10 @@
   "name": "task-manager",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "BackEnd/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "start": "node BackEnd/server.js",
+    "dev": "nodemon BackEnd/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "mongodb": "^3.5.8",
-    "mongoose": "^5.12.10",
+    "mongoose": "^5.12.15",
     "mongoose-id-validator": "^0.6.0",
     "validator": "^10.9.0"
   },

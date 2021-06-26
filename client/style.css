@@ -1,0 +1,85 @@
+body {
+    /* background-image: url('homebanner.jpg'); */
+    background-image: url('travel1.jpg');
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#add {
+    background-color: #d6ece4; 
+    /* border: none; */
+    color:black;
+    padding: 15px 32px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#sort {
+    background-color: d6ece4; 
+    /* border: none; */
+    color:black;
+    /* padding: 15px 32px; */
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+
+
+#sort,#add{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+ 
+}
+
+.tableClass{
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background-color:rgba(208, 224, 218, .5);
+}
+
+.center{
+    display: table;
+    margin: 0 auto;
+    /* margin-top: 30px; */
+}
+
+button{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#d6ece4; 
+    border-radius: 10px;
+
+}
+
+ul{
+    font-size: 22px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+input{
+    margin-right: 10px;
+    font-size: large;
+}
