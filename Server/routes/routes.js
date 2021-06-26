@@ -6,7 +6,6 @@ guideRoutes = require('./guide');
 var router = express.Router();
 
 
-
 router.get('/guide/:guide_name', guideRoutes.getGuide);
 router.post('/guide', guideRoutes.createGuide);
 
