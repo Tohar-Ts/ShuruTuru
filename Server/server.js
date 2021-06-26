@@ -16,7 +16,7 @@
 // app.use('/edit_tour/:tour_id', express.static(path.join(__dirname, '../FrontEnd/html/edit_tour_form.html')));
 // app.use('/scripts', express.static(path.join(__dirname, '../FrontEnd/scripts')));
 // app.use('/styles', express.static(path.join(__dirname, '../FrontEnd/styles')));
-// app.use('/data', express.static(path.join(__dirname, '../BackEnd/data')));
+// app.use('/data', express.static(path.join(__dirname, '../Server/data')));
 
 // //restfull 
 // app.use(express.json());
@@ -41,7 +41,7 @@ app.use('/updateTrip/:id', express.static(path.join(__dirname, '../client/update
 app.use('/main', express.static(path.join(__dirname, '../client/Shuru-Turu.html')));
 app.use('/public', express.static(path.join(__dirname, '../client')));
 app.use('/add_guide', express.static(path.join(__dirname, '../client/add_guide_form.html')));
-app.use('/data', express.static(path.join(__dirname, '../BackEnd/data')));
+app.use('/data', express.static(path.join(__dirname, '../Server/data')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/', routers);

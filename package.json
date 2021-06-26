@@ -2,10 +2,10 @@
   "name": "task-manager",
   "version": "1.0.0",
   "description": "",
-  "main": "BackEnd/server.js",
+  "main": "Server/server.js",
   "scripts": {
-    "start": "node BackEnd/server.js",
-    "dev": "nodemon BackEnd/server.js"
+    "start": "node Server/server.js",
+    "dev": "nodemon Server/server.js"
   },
   "keywords": [],
   "author": "",
